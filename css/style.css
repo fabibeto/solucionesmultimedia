@@ -19,7 +19,10 @@
     width: 100px;
     height: 100px;
 }
-
+.textoQuienesSomos h3
+{
+    padding: 10px;
+}
 .banner
 {
     width: 100%;
@@ -38,10 +41,6 @@
     display: block;
     margin: auto;
     color: black;
-    /* font-family: "Expletus Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal; */
     font-family: "Lobster Two", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -50,14 +49,190 @@
 h1{text-align: center;}
 h3{text-align: center;}
 
-.servicios
+.containerServicios
 {
-    background-color: brown;
+    display: grid;
+    gap: 10px;
+    background-color: #fff;
+    color:#000;
+    grid-template-columns: 1fr 1fr 0.3fr 1fr;
+    grid-template-rows:1fr 0.2fr 1fr 1fr 1fr; 
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
-.galeria
+.box0
 {
-    background-color: blueviolet;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #005cab;
+    grid-column: 1/5;
 }
+.box1
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    grid-column: 1/5;
+    align-content: center;
+}
+.box2 img 
+{  width: 100px; 
+   height: 100px;
+   padding: 10px;
+   align-items: center; 
+   border-radius: 5px;
+}
+.box3
+{ padding: 10px;}
+
+.box4 img
+{
+   width: 100px; 
+   height: 100px;
+   padding: 10px;
+} 
+.box5
+{ 
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.box6 img
+{
+   width: 100px; 
+   height: 100px;
+   padding: 10px;
+}
+.box7
+{padding: 10px;}
+
+.box8 img
+{
+   width: 100px; 
+   height: 100px;
+   padding: 10px;
+}
+.box9
+{
+  padding: 10px;
+  margin-right: 15px;
+}
+.box10
+{
+    background-color: #f7f7f7;
+    grid-column: 1/5;
+}
+.box10 h2
+{
+    margin-top: 55px;
+}
+.formulario
+{
+   padding: 40px;
+}
+.containerGaleria
+{
+    display: grid;
+    gap: 5px;
+    height:850px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:1fr 1fr 1fr 1fr; 
+    /* background-color: antiquewhite; */
+    justify-content: center;
+}
+.caja
+{
+  /* background-color: red; */
+  text-align: center;
+}
+.caja1 img
+{
+    margin-top: 50px; 
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja2 img
+{
+    margin-top: 50px; 
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja3 img
+{
+    margin-top: 50px;
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja4
+{
+  margin-top: 50px; 
+  width: 300px;
+  height: 250px;
+  grid-column: 4;
+  grid-row: 1 / span 2;   
+}
+.caja5
+{
+  width: 300px;
+  height: 250px;
+  grid-column: 1;
+  grid-row: 2 / span 2;   
+}
+.caja6 img
+{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja7 img
+{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja8 img
+{
+    /* margin-top: 5px; */
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja9 img
+{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+}
+.caja10 p
+{
+    /* margin-top: 20px; */
+    width: 300px;
+    height: 250px;
+}
+/*.caja2
+{
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+    background-color: rebeccapurple;
+}
+.caja3
+{
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+    background-color: blue;
+}
+.caja4
+{
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+    background-color: cornflowerblue;
+} */
 .contacto
 {
     background-color: yellow;
