@@ -29,7 +29,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarText">
+          <div class="collapse navbar-collapse menu" id="navbarText">
             <ul class="navbar-nav nav-underline mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -38,13 +38,13 @@
                 <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Galería</a>
+                <a class="nav-link" href="#galeria">Galería</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
             <span class="navbar-text">
@@ -112,12 +112,12 @@
      <section class="container quienesSomos">
         <h1>Soluciones Multimedia</h1>
         <h3>Innovamos para conectar</h3>
-        
-       <div class="row">
-            <div class="col-xs-12 col-md-6 logoQuienesSomos">
+        <div class="row filaQuienesSomos">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-4 logoQuienesSomos">
                 <img src="./img/logo.png" alt="Logo de la empresa" img="img-fluid">
             </div>
-            <div class="col-xs-12 col-md-6 textoQuienesSomos">
+            <div class="col-xs-12 col-md-4 textoQuienesSomos">
                 <p>
                     <h3>Quienes Somos</h3> 
                     En nuestro equipo, combinamos pasión por la tecnología y creatividad para ofrecer experiencias inmersivas únicas. 
@@ -129,45 +129,49 @@
      </section>
     <!-- FIN QUIENES SOMOS -->
     <!-- SERVICIOS -->
+    <a name="servicios"></a>
     <div class="containerServicios">
       <div class="box0">
-
+        <div class="icono"><img class="icono" src="./img/360-grados.png" alt="icono foto 360º"></div>
+        <div class="icono"><img class="icono" src="./img/sitio-web.png" alt="icono sitio web"></div>
+        <div class="icono"><img class="icono" src="./img/3d.png" alt="icono realidad virtual"></div>
+        <div class="icono"><img class="icono" src="./img/video-360.png" alt="icono video 360"></div>
       </div>
       <div class="box box1">
         <h2>Servicios Destacados</h2>
       </div>
       <div class="box box2">
-        <img src="./img/logo.png" alt="foto de cactus en Tilcara,Provincia de Jujuy,Argentina.">
+        <img src="./img/360-grados.png" alt="foto de cactus en Tilcara,Provincia de Jujuy,Argentina.">
       </div>
       <div class="box box3">
         <h3>Tour Virtuales</h3>
         <p>Ofrecemos tours virtuales interactivos que permiten a tus clientes explorar y experimentar espacios como si estuvieran allí.
            Con tecnología de punta,capturamos cada detalle en 360°,brindando una experiencia inmersiva y accesible desde cualquier dispositivo.
         </p>
-        <button class="button btn btn-primary">+Info</button>
+        <!-- <button class="button btn btn-primary">+Info</button> -->
       </div>
       <div class="box box4">
-        <img src="./img/logo.png" alt="logo">
+        <img src="./img/camara.png" alt="icono camara reflex">
       </div>
       <div class="box box5">
         <h3>Fotografía 360° y Convencional</h3>
         <p>Capturamos la esencia de cada lugar con nuestra fotografía profesional. 
            Ya sea en formato 360° para una vista envolvente o convencional para retratar la perfección, nuestras imágenes destacan por su calidad y atención al detalle.
         </p>
-        <button class="button btn btn-primary">+Info</button>
+        <!-- <button class="button btn btn-primary">+Info</button> -->
       </div>
       <div class="box box6">
-        <img src="./img/logo.png" alt="logo">
+        <img src="./img/video-360.png" alt="logo">
       </div>
       <div class="box box7">
         <h3>Video 360°</h3>
         <p>Creamos videos 360° que sumergen al espectador en una experiencia audiovisual completa. 
            Ideal para mostrar espacios, eventos o productos de manera innovadora, nuestros videos permiten una interacción única y memorable.
         </p>
-        <button class="button btn btn-primary">+Info</button>
+        <!-- <button class="button btn btn-primary">+Info</button> -->
       </div>
       <div class="box box8">
-        <img src="./img/logo.png" alt="logo">
+        <img src="./img/sitio-web.png" alt="icono sitio web">
       </div>
       <div class="box box9">
         <h3>Diseño de Páginas Web a Medida</h3>
@@ -175,8 +179,9 @@
            Desde sitios informativos hasta plataformas interactivas,cada proyecto se adapta a tus necesidades y objetivos, 
            asegurando un diseño atractivo y funcional.
         </p>
-        <button class="button btn btn-primary">+Info</button>
+        <!-- <button class="button btn btn-primary">+Info</button> -->
       </div>
+      <!-- CALL TO ACTION -->
       <div class="box box10">
         <h2>Comunicate con Nosotros</h2>
           <div class="row formulario">
@@ -188,20 +193,18 @@
               <input type="email" aria-label="email" class="form-control" placeholder="E-mail">
             </div>
             <div class="col-md-2">
-              <textarea class="form-control" rows="1" aria-label="With textarea">Escribe aquí</textarea>
+              <textarea class="form-control" rows="1" aria-label="With textarea" placeholder="Escribe aquí"></textarea>
             </div>
-            <!-- <div class="col-md-2">
-               <button type="button" class="btn btn-primary">Enviar</button>
-            </div> -->
             <div class="d-grid gap-2 col-2 mx-auto">
               <button class="btn btn-primary" type="button">Enviar</button>
             </div>
              <div class="col-md-2"></div> 
           </div>
       </div>
-
+      <!-- FIN CALL TO ACTION -->
     </div>
     <!-- GALERIA -->
+    <a name="galeria"></a>
     <div class="containerGaleria">
       <div class="caja caja1"><img src="./img/vr.jpg" alt="realidad virtual"></div>
       <div class="caja caja2"><img src="./img/gafasvr.jpg" alt="gafas realidad virtual"></div>
@@ -220,9 +223,39 @@
       </div>
   </div>
      <!-- CONTACTO -->
-     <contacto class="contacto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam inventore temporibus minima, aut quia incidunt ducimus, dolores architecto, soluta nisi illo vero assumenda nihil eius ex. Maxime laudantium quod reprehenderit.
-     </contacto>
+     <a name="contacto"></a> 
+     <div class="contacto">
+        <h2>Contacto</h2>
+        <div class="row">
+          <div class="col-2"></div>
+           <div class="col-4">
+              <form action="" class="mt-5 formContacto">
+                 <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                 <input type="email" class="form-control mt-3" name="email" placeholder="e-mail"> 
+                 <textarea class="form-control mt-3" rows="1" aria-label="With textarea" placeholder="escribe aquí"></textarea>
+                 
+                 <div class="d-grid gap-2">
+                  <button class="btn btn-primary mt-3" type="button">Enviar</button>
+                </div>
+                 <!-- <button class="btn btn-primary btn-lg mt-3 mx-auto" type="button">Enviar</button> -->
+              </form>
+           </div>
+           <div class="col-1"></div> 
+           <div class="col-4 redesSociales">
+              <h5 class="mx-auto">Seguinos en Nuestras Redes Sociales</h5>
+              <div class="iconosRedes mt-3">
+                <img src="./img/facebook.png" alt="logofacebook">
+                <img src="./img/instagram.png" alt="logoinstagram">
+              </div>
+           </div>
+           <div class="col-1"></div> 
+        </div>
+        <div class="row derechosReservados">
+          <div class="col-12 mt-3">
+                <p>&#169 Todos los derechos reservados Soluciones Multimedia</p>
+          </div>
+        </div>
+     </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 

@@ -3,21 +3,64 @@
     padding:0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family:'Lato';
+    src: url(/font/Lato/Lato-Regular.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family:'LatoItalic';
+    src: url(/font/Lato/Lato-LightItalic.ttf);
+    font-style: italic;
+}
 .logo img
 {
     width: 25px;
     height: 25px;
 }
+.menu li a:hover
+{
+    color: #e8581c;
+}
+/* {
+    margin-top:50px;
+} */
+.quienesSomos h1
+{
+  font-family: 'Lato';
+  font-style: normal;
+}
+h2
+{
+  font-family: 'Lato';
+  font-style: normal;
+}
+h3
+{
+  font-family: 'LatoItalic';
+  font-style: Light 300 Italic;
+}
 .quienesSomos
 {
-    margin-top: 50px;
+    /* display: flex;
+    flex-direction: column; */
+    height: 450px;
+}
+.filaQuienesSomos
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .logoQuienesSomos img
 {
     margin-top: 50px;
     width: 100px;
     height: 100px;
+}
+.textoQuienesSomos
+{
+    display: inline;
 }
 .textoQuienesSomos h3
 {
@@ -36,14 +79,21 @@
 }
 .bannerDescripcion
 {
-    width: 90%;
+    /* background-color: #e8581c; */
+    background-color: #005cab;
+    padding: 15px;
+    /* width: 90%; */
     max-width: 1000px;
     display: block;
-    margin: auto;
-    color: black;
-    font-family: "Lobster Two", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    margin: left;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.bannerDescripcion h2
+{
+    font-family: 'Lato';
+    font-weight: Light 300;
 }
 
 h1{text-align: center;}
@@ -62,12 +112,26 @@ h3{text-align: center;}
     align-content: center;
 }
 .box0
-{
-    margin-top: 40px;
-    margin-bottom: 40px;
+{   display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 300px;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
     background-color: #005cab;
     grid-column: 1/5;
 }
+.icono
+{
+    align-content: space-between;
+    margin-top: 35px;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    color: #fff;
+    
+}
+
 .box1
 {
     margin-top: 10px;
@@ -125,6 +189,10 @@ h3{text-align: center;}
 .box10 h2
 {
     margin-top: 55px;
+}
+.box10 .formulario button:hover
+{
+    background-color: #e8581c;
 }
 .formulario
 {
@@ -195,7 +263,6 @@ h3{text-align: center;}
 }
 .caja8 img
 {
-    /* margin-top: 5px; */
     width: 300px;
     height: 250px;
     border-radius: 5px;
@@ -208,34 +275,52 @@ h3{text-align: center;}
 }
 .caja10 p
 {
-    /* margin-top: 20px; */
     width: 300px;
     height: 250px;
 }
-/*.caja2
-{
-    width: 300px;
-    height: 250px;
-    margin-top: 15px;
-    background-color: rebeccapurple;
-}
-.caja3
-{
-    width: 300px;
-    height: 250px;
-    margin-top: 15px;
-    background-color: blue;
-}
-.caja4
-{
-    width: 300px;
-    height: 250px;
-    margin-top: 15px;
-    background-color: cornflowerblue;
-} */
+
 .contacto
 {
-    background-color: yellow;
+    background-color: #2b3035;
+    height: 385px;
+    padding: 15px;
+}
+.contacto h2
+{
+    color: #f7f7f7;
+    text-align: center;
+}
+.formContacto button
+{
+    display: flex;
+    justify-content: center;   
+}
+
+.formContacto button:hover
+{
+    background-color: #e8581c;
+}
+
+.redesSociales h5
+{
+    text-align: center;
+    color: #f7f7f7;
+    padding: 5px;
+}
+
+.iconosRedes
+{
+  text-align: center;
+}
+.iconosRedes img
+{  width: 25px;
+   height: 25px;
+}
+.derechosReservados
+{
+    color: #f7f7f7;
+    text-align: center;
+    padding: 15px;
 }
 
 /*MOBILE*/
